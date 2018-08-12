@@ -29,9 +29,7 @@ const {User} = require('./../server/models/user');
 //   console.log('Todo By Id', todo);
 // }).catch((e) => console.log(e));
 
-var id = '5b6fad70e9de7e0a15ec815a';
-
-User.findById(id).then((user) => {
+User.findById('5b6fad70e9de7e0a15ec815a').then((user) => {
   if (!user) {
     return console.log('Unable to find user');
   }
